@@ -188,7 +188,7 @@ public class MainActivity extends AppCompatActivity {
             setContentView(R.layout.activity_2);
             c = c-1;
             maxscore = sharedPref.getInt("maxscore", 0);
-            if (maxscore < c){
+            if (maxscore < c){h
                 maxscore = c;
                 editor.putInt("maxscore", maxscore);
                 editor.apply();
