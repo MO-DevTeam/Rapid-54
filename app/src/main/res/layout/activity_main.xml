@@ -18,6 +18,7 @@
             android:text="60:00"
             android:textSize="32sp" />
 
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="0dp"
