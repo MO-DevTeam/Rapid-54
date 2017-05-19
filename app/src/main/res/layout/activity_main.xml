@@ -4,25 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/gridmain"
     tools:context="com.example.android.rapid54.MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#26A69A"
+    tools:ignore="ContentDescription">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp">
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/timetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_weight="0"
+            android:paddingStart="20dp"/>
+
+        <TextView
+            android:id="@+id/scoretext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="20dp">
         <TextView
             android:id="@+id/timer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="60:00"
-            android:textSize="32sp" />
+            android:text="60 : 00"
+            android:textSize="32sp"
+            android:paddingStart="20dp"
+            android:textColor="@android:color/black"
+            android:layout_weight="0"/>
 
 
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="32sp"
+            android:textColor="@android:color/black"
             android:layout_weight="1" />
 
         <ImageView
@@ -39,7 +75,7 @@
     <LinearLayout
         android:id="@+id/MainLL"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:layout_margin="20dp"
         android:layout_weight="1"
         android:orientation="vertical">
@@ -65,7 +101,7 @@
             <TextView
                 android:id="@+id/text1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center" />
 
@@ -880,6 +916,8 @@
 
 
     </LinearLayout>
+
+
 
 
 </LinearLayout>

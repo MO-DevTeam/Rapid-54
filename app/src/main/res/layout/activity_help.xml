@@ -1,7 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:onClick="playAgain">
+    android:background="#26A69A">
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/howtoplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HOW TO PLAY"
+        android:textSize="40sp"
+        android:textColor="@android:color/black"
+        android:gravity="center_horizontal"
+        android:layout_margin="8dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:contentDescription="Help screen"
+        android:layout_below="@id/howtoplay"
+        android:id="@+id/helpscreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/helpscreen"
+        android:adjustViewBounds="true"/>
+
+
+    <LinearLayout
+        android:id="@+id/play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="playAgain"
+        android:layout_alignParentBottom="true"
+        android:background="#26A69A">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="100000"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play"
+            android:textColor="@android:color/black"
+            android:textSize="32sp"
+            android:padding="8dp"
+            android:layout_marginBottom="4dp" />
+
+        <ImageView
+            android:layout_width="52dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/play"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="100000"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -16,7 +16,7 @@ public class MainPageActivity extends AppCompatActivity {
 
         TextView name = (TextView) findViewById(R.id.name);
         Typeface face = Typeface.createFromAsset(getAssets(),
-                "fonts/rugsnatcher.ttf");
+                "fonts/title.ttf");
         name.setTypeface(face);
 
     }
@@ -24,6 +24,7 @@ public class MainPageActivity extends AppCompatActivity {
     public void play(View view){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
-
+        finish();
     }
+
 }

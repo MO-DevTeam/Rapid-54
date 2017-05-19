@@ -5,17 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.rapid54.MainPageActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#26A69A">
 
     <TextView
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="RAPID 54"
-        android:textSize="90sp"
+        android:textSize="80dp"
         android:gravity="center"
         android:layout_weight="2"
-        android:textColor="@android:color/black"/>
+        android:textColor="@android:color/black" />
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
