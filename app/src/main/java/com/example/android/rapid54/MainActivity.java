@@ -373,18 +373,16 @@ public class MainActivity extends AppCompatActivity {
 
             pwindo = new PopupWindow(layout);
             pwindo.setFocusable(true);
-            if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
+            if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                 pwindo.setElevation(100f);
                 width = width - 60;
-            }
-            else {
+            } else {
 
                 pwindo.setBackgroundDrawable(getResources().getDrawable(android.R.drawable.dialog_holo_light_frame));
             }
-            pwindo.setHeight(width/2);
+            pwindo.setHeight(width / 2);
             pwindo.setWidth(width);
             pwindo.setOutsideTouchable(false);
-
 
 
             pwindo.showAtLocation(layout, Gravity.CENTER, 0, 0);
@@ -408,17 +406,17 @@ public class MainActivity extends AppCompatActivity {
             TextView resume = (TextView) layout.findViewById(R.id.resume);
             TextView exit = (TextView) layout.findViewById(R.id.exit);
 
-            resume.setOnClickListener(new View.OnClickListener(){
+            resume.setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void onClick(View view){
+                public void onClick(View view) {
                     pwindo.dismiss();
 
                 }
             });
 
-            exit.setOnClickListener(new View.OnClickListener(){
+            exit.setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void onClick(View view){
+                public void onClick(View view) {
                     a = 1;
                     onBackPressed();
                 }
@@ -429,7 +427,6 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
-
 
 
 
